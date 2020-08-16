@@ -23,7 +23,7 @@
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="assets/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css?ver=42">
+    <link rel="stylesheet" href="css/style.css?ver=43">
     <script src="https://kit.fontawesome.com/ac121e1154.js" crossorigin="anonymous"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -60,7 +60,7 @@
           <ul class="navbar-nav mr-3">
             <li id="login" class="inline-block">
               <a id="login-trigger" href="#"><i class="fas fa-user-circle" aria-hidden="true"></i>
-                <span class="sesion">&#32;John Doe &#32;<i class="fas fa-chevron-down arrow"></i></span>
+                <span class="sesion d-none d-sm-block">&#32;John Doe &#32;<i class="fas fa-chevron-down arrow"></i></span>
               </a>
               <div id="login-content">
                 <ul class="list-group list-group-flush">
@@ -145,12 +145,12 @@
         </aside>
         <div class="content-wrapper">
           <section class="content">
-            <div class="col-lg-12">
+            <div class="col-lg-12 marginMobile">
               <!-- Inicio  widgets-container-->
               <div class="widgets-container">
                 <!-- Inicio titulo Test -->
                 <div class="box-header">
-                  <h3 class="box-title"><i class="fas fa-volume-up"></i> Bienvenido! Listening Test A – Comprensión auditiva / Escuchar</h3>
+                  <h3 class="box-title"><i class="fas fa-volume-up d-none d-sm-inline-block"></i> Bienvenido! Listening Test A – Comprensión auditiva / Escuchar</h3>
 
                 </div>
                 <!-- Cierre titulo Test -->
@@ -163,15 +163,15 @@
                     
                     <ul class="list-group mb-4">
                       <li class="list-group-item active h5">Instrucciones - Parte 1 Monólogo tiempo de duración 20 minutos</li>
-                      <li class="list-group-item"> <i class="fas fa-assistive-listening-systems mr-3 colorFontawesome"></i>Para activar el reproductor de audio debes hacer click en INICIAR TEST, una ves escuchado el audio por primera ves recién se activaran las preguntas. </li>
-                      <li class="list-group-item"><i class="far fa-file-alt mr-3 colorFontawesome"></i>Puedes escuchar el audio 2 veces, luego se desactivara.</li>
-                      <li class="list-group-item"><i class="fas fa-assistive-listening-systems mr-3 colorFontawesome"></i>Lee las preguntas.</li>
-                      <li class="list-group-item"><i class="fas fa-list-ul mr-3 colorFontawesome""></i>Para cada pregunta, escoge la mejor opción.</li>
+                      <li class="list-group-item"> <i class="fas fa-assistive-listening-systems mr-3 colorFontawesome d-none d-sm-inline-block"></i>Para activar el reproductor de audio debes hacer click en INICIAR TEST, una ves escuchado el audio por primera ves recién se activaran las preguntas. </li>
+                      <li class="list-group-item"><i class="far fa-file-alt mr-3 colorFontawesome d-none d-sm-inline-block"></i>Puedes escuchar el audio 2 veces, luego se desactivara.</li>
+                      <li class="list-group-item"><i class="fas fa-assistive-listening-systems mr-3 colorFontawesome d-none d-sm-inline-block"></i>Lee las preguntas.</li>
+                      <li class="list-group-item"><i class="fas fa-list-ul mr-3 colorFontawesome d-none d-sm-inline-block"></i>Para cada pregunta, escoge la mejor opción.</li>
                     </ul>
                     
                     <!-- Inicio lista test -->
                     <ul class="list-group">
-                      <li class="list-group-item test active m-0 d-flex justify-content-between align-items-center">
+                      <li class="list-group-item test active m-0">
                         <div class="instructions">
                           <a class="btn btn-primary text-uppercase iniciarTest mr-3">
                             <i class="far fa-clock pr-2"></i>Iniciar test&#32;<span id="countdown">20:00</span>
@@ -390,20 +390,15 @@
             </div><!-- /cierra.content-wrapper -->
             <!-- Inicio footer -->
             <footer class="main-footer">
-              <div class="pull-right hidden-xs">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="content-icon d-flex align-items-center justify-content-center">
+            
+             
                       <a href="#" target="_blank">
                         <img class="img-fluid mr-4" src="img/logo-dime-success.svg" width="250" alt="">
                       </a>
                       <p class="img-fluid mr-4 text-foot">Todos los Derechos Reservados © 2020 - DIME SUCCESS</p>
                       <p class="text-uppercase text-foot">Powered by UNLIMITED LANGUAGES</p>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
+
+             
             </footer>
             <!-- Cierre footer -->
             <!-- Modal -->
