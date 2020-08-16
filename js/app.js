@@ -875,6 +875,22 @@ $('button.agrandar').on('click', function(){
   });
 });
 
+$('button.agrandar').on('click', function(){
+  var clicked = this;
+  $('.list-group-flush').css('font-size', function (i,size) {
+      console.log(parseInt(size, 10), clicked.id);
+      return parseInt(size,10) + (clicked.id === 'up' ? 2 : -2) + 'px';
+  });
+
+  console.log($('.agrandarTexto p'));
+
+  $('p.agrandarTexto').css('font-size', function (i,size) {
+    console.log(parseInt(size, 10), clicked.id);
+    return parseInt(size,10) + (clicked.id === 'up' ? 2 : -2) + 'px';
+  });
+
+});
+
 // Audio
 var audio = document.getElementById('audio-id');
 audio.style.width = '200px';
