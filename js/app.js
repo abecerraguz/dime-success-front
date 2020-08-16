@@ -875,6 +875,11 @@ $('button.agrandar').on('click', function(){
   });
 });
 
+// Audio
+var audio = document.getElementById('audio-id');
+audio.style.width = '200px';
+audio.style.height = '50px';
+
 
 })
 

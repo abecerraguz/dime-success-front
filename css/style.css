@@ -4403,9 +4403,6 @@ div.meter p.porcentaje {
   margin:0;
 }
 
-
- 
-
 .scrollbar
 {
   margin-left: 30px;
@@ -4520,9 +4517,41 @@ div.meter p.porcentaje {
   background: #1877c6;
 }
 
+.enviarPreguntas{
+  width: 100%;
+  text-align: center;
+  padding:20px 0;
+}
 
 
+.contentAudio audio{
+-webkit-transition:all 0.5s linear;
+-moz-transition:all 0.5s linear;
+-o-transition:all 0.5s linear;
+transition:all 0.5s linear;
+-moz-box-shadow: 2px 2px 4px 0px #006773;
+-webkit-box-shadow:  2px 2px 4px 0px #006773;
+box-shadow: 2px 2px 4px 0px #006773;
+-moz-border-radius:7px 7px 7px 7px ;
+-webkit-border-radius:7px 7px 7px 7px ;
+border-radius:7px 7px 7px 7px ;
+}
 
+.contentTetx{
+  background: #f1f1f1;
+  padding: 1rem;
+  border: 1px solid gainsboro;
+  margin: 16px auto;
+  width: 100%;
+  max-width: 96%;
+  border-radius: 10px;
+  box-shadow: -1px 1px 6px rgb(0 0 0 / 33%);
+}
+
+.contentTetx p i{
+  font-size: 22px;
+  color:#086eac;
+}
 
 
 
