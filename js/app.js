@@ -867,6 +867,14 @@ function initTime(){
     }, 1000);
 }
 
+$('button.agrandar').on('click', function(){
+  var clicked = this;
+  $('.list-group-flush').css('font-size', function (i,size) {
+      console.log(parseInt(size, 10), clicked.id);
+      return parseInt(size,10) + (clicked.id === 'up' ? 2 : -2) + 'px';
+  });
+});
+
 
 })
 
