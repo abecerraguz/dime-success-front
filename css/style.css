@@ -23,6 +23,10 @@ body#log.cuerpo-login {
     height: 100vh;
 }
 
+/*body * {
+  border:1px solid red;
+}*/
+
 .navbar-static-top {
     z-index: 1000;
     border-width: 0 0 1px;
@@ -247,9 +251,8 @@ body#log.cuerpo-login {
 
 
 .level-skin .wrapper {
-  /*background-color: #1a2836;*/
-  background-color: #eee;
-  height:100vh;
+  /* background-color: #1a2836; */
+  background-color: #043052;
 }
 
 
@@ -357,9 +360,9 @@ body {
 }
 /* Layout */
 .wrapper {
-  min-height: 100%;
-  position: static;
-  overflow: hidden;
+min-height: 100%;
+    position: static;
+    overflow: hidden;
 }
 .wrapper:before,
 .wrapper:after {
@@ -374,8 +377,7 @@ body {
  * 
  */
 .content-wrapper,
-.right-side,
-.main-footer {
+.right-side {
   -webkit-transition: -webkit-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
   -moz-transition: -moz-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
   -o-transition: -o-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
@@ -422,14 +424,18 @@ body {
 }
 
 .main-footer {
-/*    position: absolute;*/
-    background: #04213a;
-    color: #fff;
-    border-bottom: 10px solid #03aeef;
-    padding: 60px 30px;
-    margin-top: calc(100vh/20);
-/*    bottom: -100px;*/
-    width: 100vw;
+    background: #1f5986;
+    padding: 15px;
+    color: #444;
+    border-top: 1px solid #d2d6de;
+    background: #11293c;
+    padding: 15px;
+    color: #444;
+    border-top: 1px solid #d2d6de;
+    height: 134px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* Fixed layout */
 .fixed .main-header,
@@ -750,17 +756,17 @@ a:focus {
  */
 .main-sidebar,
 .left-side {
-  position: absolute;
-  top: 100px;
-  left: 0;
-  padding-top: 50px;
-  min-height: 100%;
-  width: 230px;
-  z-index: 810;
-  -webkit-transition: -webkit-transform 0.3s ease-in-out, width 0.3s ease-in-out;
-  -moz-transition: -moz-transform 0.3s ease-in-out, width 0.3s ease-in-out;
-  -o-transition: -o-transform 0.3s ease-in-out, width 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
+    position: absolute;
+    top: 110px;
+    left: 0;
+    padding-top: 50px;
+    min-height: 100%;
+    width: 230px;
+    z-index: 810;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out, width 0.3s ease-in-out;
+    -moz-transition: -moz-transform 0.3s ease-in-out, width 0.3s ease-in-out;
+    -o-transition: -o-transform 0.3s ease-in-out, width 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
 }
 @media (max-width: 767px) {
   .main-sidebar,
