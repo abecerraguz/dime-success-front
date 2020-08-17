@@ -387,7 +387,7 @@ min-height: 100%;
   -moz-transition: -moz-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
   -o-transition: -o-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, margin 0.3s ease-in-out;
-  margin-left: 250px;
+  margin-left: 230px;
   z-index: 820;
 }
 .layout-top-nav .content-wrapper,
@@ -765,7 +765,7 @@ a:focus {
     font-size: 20px;
     line-height: 50px;
     text-align: center;
-    width: 250px;
+    width: 230px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding: 0 15px;
     font-weight: 300;
@@ -901,7 +901,7 @@ a:focus {
     left: 0;
     padding-top: 50px;
     min-height: 100%;
-    width: 250px;
+    width: 230px;
     z-index: 810;
     -webkit-transition: -webkit-transform 0.3s ease-in-out, width 0.3s ease-in-out;
     -moz-transition: -moz-transform 0.3s ease-in-out, width 0.3s ease-in-out;
@@ -4742,13 +4742,14 @@ border-radius:7px 7px 7px 7px ;
 
 .selectSentence p{
   font-size: 16px;
+  line-height: 180%;
 }
 
 .btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active, .show > .btn-light.dropdown-toggle {
   color: #212529;
   background-color: transparent;
   border-color: transparent;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #086eac;
   border-radius: 0!important;
 }
 
@@ -4756,7 +4757,7 @@ border-radius:7px 7px 7px 7px ;
   cursor: pointer;
   background: transparent;
   border: transparent;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #086eac;
   border-radius: 0!important;
 }
 
@@ -4766,6 +4767,7 @@ border-radius:7px 7px 7px 7px ;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background: #cecece;
+  padding: 0;
 }
 
 .bootstrap-select .dropdown-menu li a.selected {
@@ -4786,6 +4788,18 @@ border-radius:7px 7px 7px 7px ;
 .dropdown-menu > li > a {
   color: #000!important;
   border-bottom: 1px solid #c1c1c1;
+}
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+  width: 197px!important;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+  overflow: hidden;
+  color:#62a2cb;
 }
 
 
