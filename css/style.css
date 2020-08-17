@@ -3069,7 +3069,7 @@ table.stripe.row-border.order-column.dataTable.no-footer {
 .table-price:hover .overlay {
   opacity: 1;
 }
-.text {
+/* .text {
   color: white;
   font-size: 20px;
   position: absolute;
@@ -3078,7 +3078,7 @@ table.stripe.row-border.order-column.dataTable.no-footer {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-}
+} */
 .box-price h4 {
   margin: 0;
   padding: 0;
@@ -4724,6 +4724,68 @@ border-radius:7px 7px 7px 7px ;
 
 .agrandarTexto p{
   font-size: 16px;
+}
+.selectSentence{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  max-width: 96%;
+  background: #fff;
+  margin: 0 auto;
+  color: grey;
+}
+
+.selectSentence p .selectPicker{
+  display: inline-block;
+  color: white;
+}
+
+.selectSentence p{
+  font-size: 16px;
+}
+
+.btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active, .show > .btn-light.dropdown-toggle {
+  color: #212529;
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom: 1px solid grey;
+  border-radius: 0!important;
+}
+
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+  background: transparent;
+  border: transparent;
+  border-bottom: 1px solid grey;
+  border-radius: 0!important;
+}
+
+.bootstrap-select .dropdown-menu.show {
+  min-width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #cecece;
+}
+
+.bootstrap-select .dropdown-menu li a.selected {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #086eac;
+  color: white!important;
+}
+
+.bootstrap-select .dropdown-menu li a span.text {
+  display: inline-block;
+  position: static!important;
+}
+
+.dropdown-menu > li > a {
+  color: #000!important;
+  border-bottom: 1px solid #c1c1c1;
 }
 
 
