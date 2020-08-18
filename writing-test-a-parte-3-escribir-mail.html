@@ -22,10 +22,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
- 
     <link rel="stylesheet" href="assets/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-select.min.css">
-   
     <link rel="stylesheet" href="css/style.css?ver=44">
     <script src="https://kit.fontawesome.com/ac121e1154.js" crossorigin="anonymous"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -70,10 +67,12 @@
                   <li class="list-group-item"><i class="far fa-clock mr-2 colorFontawesome"></i> Tiempo total del Test 2 Hrs </li>
                   <li class="list-group-item"><i class="fas fa-chart-line mr-2 colorFontawesome"></i>Porcentaje de avance</li>
                   <li class="list-group-item">
+
                     <div class="meter">
                       <span class="contenedorBar" style="width:50%"></span>
                       <p class="porcentaje"></p>
                     </div>
+
                   </li>
                 </ul>
               </div>
@@ -99,8 +98,8 @@
               </a>
               <ul class="treeview-menu">
                 <li><span class="bg-test">Listening Test A</span></li>
-                <li><a href="#">Parte 1–Monólogo</a></li>
-                <li><a href="#">Parte 2–Dialogo</a></li>
+                <li><a href="#">Parte 1 – Monólogo</a></li>
+                <li><a href="#">Parte 2 – Dialogo</a></li>
               </ul>
             </li>
             <li class="treeview">
@@ -112,7 +111,7 @@
               <ul class="treeview-menu">
                 <li><span class="bg-test">Reading Test A</span></li>
                 <li><a href="reading-test-a-parte-1-comprension-lectora.html">Parte 1 – Ciencia</a></li>
-                <li><a href="#">Parte 2–Dialogo</a></li>
+                <li><a href="#">Parte 2 – Dialogo</a></li>
               </ul>
             </li>
             <li class="treeview active">
@@ -125,7 +124,7 @@
                 <li><span class="bg-test">Writing Test A</span></li>
                 <li><a href="#">Parte 1–Escoge la palabra correcta</a></li>
                 <li><a href="#">Parte 2–Refrasear</a></li>
-                <li><a href="#">Parte 3– Escribir e-mail</a></li>
+                <li><a href="#">Parte 3–Escribir e-mail</a></li>
                 <li><a href="#">Parte 4–Contestar una invitación</a></li>
               </ul>
             </li>
@@ -139,7 +138,7 @@
                 <li><span class="bg-test">Speking Test A</span></li>
                 <li><a href="#">Parte 1–Información personal</a></li>
                 <li><a href="#">Parte 2–Tema general</a></li>
-                <li><a href="#">Parte 3-Descripción de un imagen</a></li>
+                <li><a href="#">Parte 3–Descripción de un imagen</a></li>
                 <li><a href="#">Parte 4–Discurso</a></li>
               </ul>
             </li>
@@ -149,8 +148,8 @@
         <div class="content-wrapper">
           <section class="content">
             <div class="col-lg-12 marginMobile">
+            <form method="post" action="">
               <!-- Inicio  widgets-container-->
-              <form method="post" action="">
               <div class="widgets-container">
                 <!-- Inicio titulo Test -->
                 <div class="box-header">
@@ -166,11 +165,17 @@
                   <div class="table-responsive">
                     
                     <ul class="list-group mb-4">
-                      <li class="list-group-item active h5">Instrucciones - Parte 1 Escoge la palabra correcta 20 minutos</li>
-                      <li class="list-group-item"><i class="far fa-file-alt mr-3 colorFontawesome d-none d-sm-inline-block"></i>Lee el párrafo y obten la idea general.</li>
-                      <li class="list-group-item"><i class="fas fa-list-ul mr-3 colorFontawesome d-none d-sm-inline-block"></i>Escoge la mejor palabra de las cuatro opciones.
-                      </li>
-                      <li class="list-group-item"><i class="fas fa-paper-plane mr-3 colorFontawesome d-none d-sm-inline-block"></i>No te olvides de enviar tus respuestas.</li>
+                      <li class="list-group-item active h5">Instrucciones - Parte 3 Escribir e-mail dando direcciones 5 minutos</li>
+
+                      <li class="list-group-item"><i class="fas fa-map-marked-alt mr-3 colorFontawesome d-none d-sm-inline-block"></i>Haga click en el botón <span class="font-weight-bold">VER MAPA.</span> Identifique la estación de autobuses e identifique su <span class="font-weight-bold text-uppercase">casa.</span></li>
+
+                      <li class="list-group-item"><i class="far fa-file-alt mr-3 colorFontawesome d-none d-sm-inline-block"></i>Un amigo viene por autobús a visitarle en su nueva casa.  Escríbele un e-mail explicando que a lo mejor no le vas a poder recoger e indicando cómo caminar desde el terminal hasta su casa.</li>
+
+                      <li class="list-group-item"><i class="far fa-file-alt mr-3 colorFontawesome d-none d-sm-inline-block"></i>Su e-mail debe ser de entre 100 y 130 palabras.</li>
+
+                      <li class="list-group-item"><i class="fas fa-list-ul mr-3 colorFontawesome d-none d-sm-inline-block"></i>Use las palabras siguientes: <span class="font-weight-bold text-uppercase">along, over, through, between y opposite.</span> al enviar el email</li>
+               
+
                     </ul>
                     
                     <!-- Inicio lista test -->
@@ -185,121 +190,42 @@
                           </a>
                         </div>
 
+                        <!-- Inicio ver mapa -->
+                        <div class="contentAudio">
+                            <a class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#infoMap">
+                                <i class="fas fa-map-marked-alt pr-2"></i>VER MAPA
+                            </a>
+                        </div>
+                        <!-- Cierre ver mapa -->
                         
                       </li>
                       <div class="bordeContent">
                         <div class="contentTetx p-3">
-                          <p class="m-0"> <i class="fas fa-exclamation-circle mr-2"></i>Recuerde usted debe leer el párrafo y obtener la idea general.</p>
+                          <p class="m-0"> <i class="fas fa-exclamation-circle mr-2"></i>Recuerde usted debe ingresar los datos requeridos,  Su e-mail debe ser de entre 100 y 130 palabras.</p>
                         </div>
-           
                         
-                        <!-- Inicio Panel -->
-                
-                          <div class="selectSentence mt-4">
-                            <p>
-                            <select class="selectPicker show-tick" title="Seleccione una opción">
-                              <option>Is</option>
-                              <option>Are</option>
-                              <option>Was</option>
-                              <option>Those</option>
-                            </select>
-                                coincidences just lucky events that just
-                                <select class="selectPicker show-tick" title="Seleccione una opción">
-                                  <option>seem</option>
-                                  <option>occur</option>
-                                  <option>things</option>
-                                  <option>related</option>
-                                </select> to happen at the same time or are they something else?  For example: You are tidying a drawer
-                                
-                                <select class="selectPicker show-tick" title="Seleccione una opción">
-                                  <option>by</option>
-                                  <option>for</option>
-                                  <option>with</option>
-                                  <option>in</option>
-                                </select>your desk and you find the
-                                 <select class="selectPicker show-tick" title="Seleccione una opción">
-                                  <option>piece</option>
-                                  <option>stub</option>
-                                  <option>slip</option>
-                                  <option>part</option>
-                                </select>of a theater ticket from a play you saw years
-                                 <select class="selectPicker show-tick" title="Seleccione una opción">
-                                  <option>since</option>
-                                  <option>make</option>
-                                  <option>for</option>
-                                  <option>ago</option>
-                                </select>.  You remember that you went to see that play with
-                                <select class="selectPicker show-tick" title="Seleccione una opción">
-                                  <option>Is</option>
-                                  <option>Are</option>
-                                  <option>Was</option>
-                                  <option>Those</option>
-                                </select> old friend from high school.  You are
-                                 <select class="selectPicker show-tick" title="Seleccione una opción">
-                                  <option>Is</option>
-                                  <option>Are</option>
-                                  <option>Was</option>
-                                  <option>Those</option>
-                                </select> thinking about the trip to the theater and the
-                                 <select class="selectPicker show-tick" title="Seleccione una opción">
-                                  <option>Is</option>
-                                  <option>Are</option>
-                                  <option>Was</option>
-                                  <option>Those</option>
-                                </select> you had afterwards and the phone rings.  You know before you
-                                 <select class="selectPicker show-tick" title="Seleccione una opción">
-                                  <option>Is</option>
-                                  <option>Are</option>
-                                  <option>Was</option>
-                                  <option>Those</option>
-                                </select> it up that it’s your old high school friend, even though you haven’t 
-                                <select class="selectPicker show-tick" title="Seleccione una opción">
-                                  <option>Is</option>
-                                  <option>Are</option>
-                                  <option>Was</option>
-                                  <option>Those</option>
-                                </select> to her in over a year.
-                              </p>
 
-                              <p>The verb to coincide
-                                 <select class="selectPicker show-tick" title="Seleccione una opción">
-                                <option>Is</option>
-                                <option>Are</option>
-                                <option>Was</option>
-                                <option>Those</option>
-                              </select>to fit together perfectly.  So, maybe there’s more to coincidences than
-                               <select class="selectPicker show-tick" title="Seleccione una opción">
-                                <option>Is</option>
-                                <option>Are</option>
-                                <option>Was</option>
-                                <option>Those</option>
-                              </select> the eye. 
-                              
-                              <select class="selectPicker show-tick" title="Seleccione una opción">
-                                <option>Is</option>
-                                <option>Are</option>
-                                <option>Was</option>
-                                <option>Those</option>
-                              </select> we only notice the big coincidences; like the one previously mentioned, but if we start looking
-                               <select class="selectPicker show-tick" title="Seleccione una opción">
-                                <option>Is</option>
-                                <option>Are</option>
-                                <option>Was</option>
-                                <option>Those</option>
-                              </select>for them, we would find that our daily life is full of them.</p>
 
-                              <p>
-                                Sometimes these coincidences are little signposts directing us towards some action or other that would change our lives in a remarkable way.  At other times they are just there to 
-                                <select class="selectPicker show-tick" title="Seleccione una opción">
-                                  <option>Is</option>
-                                  <option>Are</option>
-                                  <option>Was</option>
-                                  <option>Those</option>
-                                </select>us that there is more going on “out there” than we have been brought up to believe.
-                              </p>
+                      <div class="contenedorForm">
+
+                          <div class="form-group">
+                             <input type="text" class="form-control" placeholder="Ingrese Mail">
                           </div>
-            
-                        <!-- Cierre Panel -->
+
+                          <div class="form-group">
+                             <input type="text" class="form-control" placeholder="Ingrese Asunto">
+                          </div>
+
+                          <div class="form-group">
+                            <textarea class="form-control" rows="6" placeholder="Escriba Email"></textarea>
+                          </div>
+                        
+                      </div>
+
+
+             
+                        
+                        
                       </div>
                     </ul>
                     <!-- Cierre lista test -->
@@ -312,19 +238,15 @@
               <!-- Inicio enviarPreguntas -->
               <div class="enviarPreguntas">
                 <button type="submit" class="btn btn-primary text-uppercase iniciarTest mr-3 py-3">
-                <i class="fas fa-paper-plane pr-2"></i>Enviar preguntas
+                <i class="fas fa-paper-plane pr-2"></i>Enviar correo
                 </button>
                 <button type="submit" class="btn btn-primary text-uppercase py-3" data-toggle="modal" data-target="#infoModal" disabled>
                 <i class="fas fa-step-forward pr-2"></i>Siguiente test
                 </button>
               </div>
-
+              <!-- Cierre enviarPreguntas -->
             </form>
 
-
-
-
-              <!-- Cierre enviarPreguntas -->
             </div>
             <div class="clearfix"></div>
             </section><!-- /cierra section.content -->
@@ -348,7 +270,7 @@
               <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                   <div class="modal-header backgroundCeleste">
-                    <h5 class="modal-title text-white" id="exampleModalLongTitle">Instrucciones - Parte 1 Escoge la palabra correcta 20 minutos</h5>
+                    <h5 class="modal-title text-white" id="exampleModalLongTitle">Instrucciones - Parte 3 Escribir e-mail dando direcciones 5 minutos</h5>
                     <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                     </button>
@@ -358,10 +280,13 @@
                   </div>
                   <div class="modal-body">
                     <ul class="list-group list-group-flush mx-3 mb-3">
-                        <li class="list-group-item"><i class="far fa-file-alt mr-3 colorFontawesome d-none d-sm-inline-block"></i>Lee el párrafo y obten la idea general.</li>
-                        <li class="list-group-item"><i class="fas fa-list-ul mr-3 colorFontawesome d-none d-sm-inline-block"></i>Escoge la mejor palabra de las cuatro opciones.
-                        </li>
-                        <li class="list-group-item"><i class="fas fa-paper-plane mr-3 colorFontawesome d-none d-sm-inline-block"></i>No te olvides de enviar tus respuestas.</li>
+                      <li class="list-group-item"><i class="fas fa-map-marked-alt mr-3 colorFontawesome d-none d-sm-inline-block"></i>Haga click en el botón <span class="font-weight-bold">VER MAPA.</span> Identifique la estación de autobuses e identifique su <span class="font-weight-bold text-uppercase">casa.</span></li>
+
+                      <li class="list-group-item"><i class="far fa-file-alt mr-3 colorFontawesome d-none d-sm-inline-block"></i>Un amigo viene por autobús a visitarle en su nueva casa.  Escríbele un e-mail explicando que a lo mejor no le vas a poder recoger e indicando cómo caminar desde el terminal hasta su casa.</li>
+
+                      <li class="list-group-item"><i class="far fa-file-alt mr-3 colorFontawesome d-none d-sm-inline-block"></i>Su e-mail debe ser de entre 100 y 130 palabras.</li>
+
+                      <li class="list-group-item"><i class="fas fa-list-ul mr-3 colorFontawesome d-none d-sm-inline-block"></i>Use las palabras siguientes: <span class="font-weight-bold text-uppercase">along, over, through, between y opposite.</span> al enviar el email</li>
                     </ul>
                   </div>
                 </div>
@@ -369,16 +294,32 @@
             </div>
             <!-- Cierre Modal Instrucciones-->
 
-          
+             <!-- Info Map-->
+            <div class="modal fade" id="infoMap" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                                <div class="modal-header backgroundCeleste">
+                                  <h5 class="modal-title text-white" id="exampleModalLongTitle">Mapa de Ubicación</h5>
+                                  <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+ 
+                                <div class="modal-body">
+                                  <img src="img/mapa.svg" alt="Mapa">
+                                </div>
+                    </div>
+                </div>
+             </div>
+            <!-- Info Map-->
+
             
             </div>
-
             <!-- ./wrapper -->
             <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
             <script src="js/circle-progress.min.js?ver=2"></script>
-            <script src="js/bootstrap-select.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js" type="text/javascript"></script>
             <script src="https://cdn.rawgit.com/mckamey/countdownjs/master/countdown.min.js" type="text/javascript"></script>
             <script src="js/app.js?ver=8"></script>

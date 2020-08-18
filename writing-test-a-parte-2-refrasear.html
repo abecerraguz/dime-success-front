@@ -120,10 +120,10 @@
               </a>
               <ul class="treeview-menu">
                 <li><span class="bg-test">Writing Test A</span></li>
-                <li><a href="#">Parte 1 – Escoge la palabra correcta</a></li>
-                <li><a href="#">Parte 2 – Refrasear</a></li>
-                <li><a href="#">Parte 3 – Escribir e-mail dando direcciones</a></li>
-                <li><a href="#">Parte 4 – Contestar una invitación</a></li>
+                <li><a href="#">Parte 1–Escoge la palabra correcta</a></li>
+                <li><a href="#">Parte 2–Refrasear</a></li>
+                <li><a href="#">Parte 3–Escribir e-mail</a></li>
+                <li><a href="#">Parte 4–Contestar una invitación</a></li>
               </ul>
             </li>
             <li class="treeview">
@@ -134,10 +134,10 @@
               </a>
               <ul class="treeview-menu">
                 <li><span class="bg-test">Speking Test A</span></li>
-                <li><a href="#">Parte 1 – Información personal</a></li>
-                <li><a href="#">Parte 2 – Tema general</a></li>
-                <li><a href="#">Parte 3 – Descripción de un imagen</a></li>
-                <li><a href="#">Parte 4 – Discurso</a></li>
+                <li><a href="#">Parte 1–Información personal</a></li>
+                <li><a href="#">Parte 2–Tema general</a></li>
+                <li><a href="#">Parte 3–Descripción de un imagen</a></li>
+                <li><a href="#">Parte 4–Discurso</a></li>
               </ul>
             </li>
           </ul>
@@ -146,7 +146,7 @@
         <div class="content-wrapper">
           <section class="content">
             <div class="col-lg-12 marginMobile">
-            <form>
+            <form method="post" action="">
               <!-- Inicio  widgets-container-->
               <div class="widgets-container">
                 <!-- Inicio titulo Test -->
@@ -165,7 +165,7 @@
                     <ul class="list-group mb-4">
                       <li class="list-group-item active h5">Instrucciones - Parte 2 Refrasear 5 minutos</li>
                       <li class="list-group-item"><i class="far fa-file-alt mr-3 colorFontawesome d-none d-sm-inline-block"></i>Completa la segunda frase para tenga el mismo significado que el primero.  No uses más que cuatro palabras.</li>
-                      <li class="list-group-item"><i class="fas fa-list-ul mr-3 colorFontawesome d-none d-sm-inline-block"></i>Ingresa las palabras en los campos marcado y no olvides de enviar tus respuestas.
+                      <li class="list-group-item"><i class="fas fa-list-ul mr-3 colorFontawesome d-none d-sm-inline-block"></i>Ingresa las palabras en los campos marcados y no olvides de enviar tus respuestas.
                       </li>
                     </ul>
                     
@@ -205,13 +205,15 @@
                                     <button class="questionNext mr-3"><i class="fas fa-step-forward mr-2"></i> Saltar pregunta</button>
                                   </div>
                                   <div class="panel-body p-3">
-                                    <ul class="list-group">
-                                      <li class="list-group-item">
-                                        <div class="form-group">
-                                            My<input type="text" class="form-control d-inline">35, Silver Street.
-                                        </div>
-                                      </li>
-                                    </ul>
+
+                                      <div class="contentRefrasear">
+                                          <div class="inputContentRefrasear">
+                                            <p>My<input type="text" placeholder="Ingrese la palabra correcta">35, Silver Street.</p>
+                                          </div>
+                                      </div>
+
+
+                 
                                   </div>
                                 </div>
                               </div>
@@ -219,15 +221,22 @@
                                 <div class="panel-heading" role="tab" id="headingTwo">
                                   <h4 class="panel-title m-0 h5">
                                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                   2. Why should cities with high-speed rail stations have an efficient local transportation system?
+                                   2. John loves to go to the movies.
                                   </a>
                                   </h4>
                                 </div>
                                 <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                  <div class="buttonNextQuestion px-3">
+                                    <button class="questionNext mr-3"><i class="fas fa-step-forward mr-2"></i> Saltar pregunta</button>
+                                  </div>
                                   <div class="panel-body p-3">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                                    on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-                                    raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                      <div class="contentRefrasear">
+                                          <div class="inputContentRefrasear">
+                                            <p>John enjoys
+                                              <input type="text" placeholder="Ingrese la palabra correcta">movies.
+                                            </p>
+                                          </div>
+                                      </div>
                                   </div>
                                 </div>
                               </div>
@@ -235,7 +244,7 @@
                                 <div class="panel-heading" role="tab" id="headingThree">
                                   <h4 class="panel-title m-0 h5">
                                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                   3. When did the speaker first meet Bob?
+                                   3. The melon is in front of the apples.
                                   </a>
                                   </h4>
                                 </div>
@@ -251,7 +260,7 @@
                                 <div class="panel-heading" role="tab" id="headingThree">
                                   <h4 class="panel-title m-0 h5">
                                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                                    4. When did Bob join the Marines?
+                                    4. Were you at the gym recently?
                                   </a>
                                   </h4>
                                 </div>
@@ -267,7 +276,7 @@
                                 <div class="panel-heading" role="tab" id="headingFive">
                                   <h4 class="panel-title m-0 h5">
                                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
-                                    5. How did Bob react to being sent to Japan?
+                                    5. Is it OK to see you tomorrow?
                                   </a>
                                   </h4>
                                 </div>
@@ -283,7 +292,7 @@
                                 <div class="panel-heading" role="tab" id="headingSix">
                                   <h4 class="panel-title m-0 h5">
                                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
-                                    6. Why did Bob go to the university?
+                                    6. I can’t be there earlier than eleven in the morning.
                                   </a>
                                   </h4>
                                 </div>
@@ -299,7 +308,7 @@
                                 <div class="panel-heading" role="tab" id="headingSeven">
                                   <h4 class="panel-title m-0 h5">
                                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
-                                    7. Why did Bob take a course in astrophysics?
+                                    7. I think you should see a doctor soon.
                                   </a>
                                   </h4>
                                 </div>
@@ -315,7 +324,7 @@
                                 <div class="panel-heading" role="tab" id="headingEight">
                                   <h4 class="panel-title m-0 h5">
                                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                    8. How did Bob get the required grades at university?
+                                    8. Smoking is forbidden in this restaurant.
                                   </a>
                                   </h4>
                                 </div>
