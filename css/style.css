@@ -4429,7 +4429,7 @@ div.meter p.porcentaje {
 .btn-primary {
     color: #fff;
     background-color: #0fabef!important;
-    border-color: #007bff;
+    border-color: #007cbc;
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 1px 8px rgb(0 0 0 / 39%);
     font-size: 1em;
@@ -4438,7 +4438,7 @@ div.meter p.porcentaje {
 .btn-primary:hover {
     color: #fff;
     background-color: #027db2!important;
-    border-color: #007bff;
+    border-color: #007cbc;
 }
 
 .list-group-item.active {
@@ -4923,6 +4923,27 @@ width: 100%;
   border-radius: 5px!important;
   font-size: 1.1rem!important;
   box-shadow: 1px 1px 4px rgb(0, 0, 0, 0.1)!important;
+}
+
+
+.selectSentence .show-tick .btn-light {
+  color: #212529;
+  color: #007cbc;
+  background: transparent;
+  border: transparent;
+  border-bottom: 1px solid #0a6eac;
+  border-radius: 0;
+}
+
+.selectSentence .show-tick .bootstrap-select>.dropdown-toggle.bs-placeholder, 
+.bootstrap-select>.dropdown-toggle.bs-placeholder:active, 
+.bootstrap-select>.dropdown-toggle.bs-placeholder:focus,
+.bootstrap-select>.dropdown-toggle.bs-placeholder:hover {
+  color:#007cbc;
+  background: transparent;
+  border: transparent;
+  border-bottom: 1px solid #0a6eac;
+  border-radius: 0;
 }
 
 
