@@ -1,24 +1,20 @@
 $(document).ready(function () {
 	
-			$('#login-trigger').click(function () {
-		
-			$(this).next('#login-content').slideToggle();
-			$(this).toggleClass('active');
-			console.log('holalalal');
-			});
+$('#login-trigger').click(function () {	
+	$(this).next('#login-content').slideToggle();
+	$(this).toggleClass('active');
+});
 
-			$('.carousel').carousel({
-			interval: 5000
-			})
 
-			$("#btn").click(function () {
-				$("#recuperar").addClass('open');
-				$("#open").toggle();
-			});
 
-			$("#btn").click(function (event) {
-				event.preventdefault();
-			});
+$("#btn").click(function () {
+	$("#recuperar").addClass('open');
+	$("#open").toggle();
+});
+
+$("#btn").click(function (event) {
+	event.preventdefault();
+});
 
 	//SCROLL TOP CON ANIMATE
 	var up = $('.up');

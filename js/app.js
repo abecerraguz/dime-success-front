@@ -794,22 +794,21 @@ $(function(){
 })
 
 $(function(){
-
-
   $('.iniciarTest').click(function(event) {
     event.preventDefault();
-    console.log('Holaaaaa')
     initTime();
+    $(this).parent().parent().next('#testInfoPer-01').show();
+    $(this).next('.hideButton').show(); 
+    $(this).toggleClass('active');
+    $('div#style-8').delay(1000).show();
+    var hola = $(this).parent().parent().parent().parent().parent().parent().next('.enviarPreguntas').show();
+    console.log(hola);
   });
 
-
-
-
-var duration = moment.duration({
-  'minutes': 20,
-  'seconds': 00
-
-});
+  var duration = moment.duration({
+    'minutes': 20,
+    'seconds': 00
+  });
 
 var timestamp = new Date(0, 0, 0, 2, 10, 30);
 var interval = 1;
@@ -867,7 +866,7 @@ function initTime(){
     }, 1000);
 }
 
-$('button.agrandar').on('click', function(){
+$('.agrandar').on('click', function(){
   var clicked = this;
   $('.list-group-flush').css('font-size', function (i,size) {
       console.log(parseInt(size, 10), clicked.id);
@@ -875,7 +874,7 @@ $('button.agrandar').on('click', function(){
   });
 });
 
-$('button.agrandar').on('click', function(){
+$('.agrandar').on('click', function(){
   var clicked = this;
   $('.list-group-flush').css('font-size', function (i,size) {
       console.log(parseInt(size, 10), clicked.id);
@@ -891,6 +890,8 @@ $('button.agrandar').on('click', function(){
 
 });
 
+
+
 // Audio
 // var audio = document.getElementById('audio-id');
 // audio.style.width = '200px';
@@ -899,7 +900,7 @@ $('button.agrandar').on('click', function(){
 //Select
 $(function () {
   $('.selectPicker').selectpicker();
-  console.log($('.selectPicker').selectpicker())
+
 });
 
 
