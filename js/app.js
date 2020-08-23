@@ -804,7 +804,6 @@ $(function(){
     $(this).toggleClass('active');
     $('div#style-8').delay(1000).show();
     var hola = $(this).parent().parent().parent().parent().parent().parent().next('.enviarPreguntas').show();
-    console.log(hola);
   });
 
   var duration = moment.duration({
