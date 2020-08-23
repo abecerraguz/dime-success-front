@@ -413,6 +413,18 @@ min-height: 100%;
     margin-top:224px;
   }
 
+  #style-8::-webkit-scrollbar{
+  width: 10px!important;
+  background-color: #F5F5F5;
+  }
+
+  .d-column-flex{
+    display: flex;
+    flex-direction: column!important;
+    align-items: center;
+    justify-content: center;
+  }
+
   .main-footer {
     margin-top: 0;
     display: flex;
@@ -479,7 +491,7 @@ min-height: 100%;
     padding: 15px;
     color: #0882b5;
     text-align: center!important;
-    font-size:18px;
+    font-size:19px;
 }
 
 .list-group-item.test.active {
@@ -492,6 +504,11 @@ min-height: 100%;
   justify-content: center;
   align-items: stretch;
 }
+
+#table_dap{
+  padding:10px!important;
+}
+
 
 .btn-primary {
   color: #fff;
@@ -4383,7 +4400,7 @@ div#porcentajeAvance canvas {
     box-sizing: border-box;
     position: absolute;
     top: 0;
-    left: 68px;
+    left: 60px;
 }
 
 /*Progres bar*/
@@ -4634,6 +4651,8 @@ top: 0;
 left:0;
 
 }
+
+
 
 .m-0{
   margin:0;
@@ -5141,6 +5160,7 @@ width: 100%;
     padding: 16px;
     height: auto;
     background: #ededed;
+    border-bottom: 1px solid rgb(128 128 128 / 18%);
 }
 
 .borderRight{
@@ -5302,7 +5322,27 @@ height: 55px;
 
 /*CIERRE CSS AUDIO PLAYER*/
 
+.titleTema{
+  color: #023053;
+  max-width: 95%;
+  margin: 16px auto;
+  border-bottom: 1px solid #07adef;
+}
 
+#table_dap{
+  padding:20px;
+}
+
+#testCompPicture{
+  display:none;
+}
+
+.d-column-flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 
 
 

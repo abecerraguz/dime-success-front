@@ -798,7 +798,9 @@ $(function(){
     event.preventDefault();
     initTime();
     $(this).parent().parent().next('#testInfoPer-01').show();
+    $(this).parent().parent().next('#testCompPicture').show();
     $(this).next('.hideButton').show(); 
+    $(this).parent().next('.hideButton').show(); 
     $(this).toggleClass('active');
     $('div#style-8').delay(1000).show();
     var hola = $(this).parent().parent().parent().parent().parent().parent().next('.enviarPreguntas').show();

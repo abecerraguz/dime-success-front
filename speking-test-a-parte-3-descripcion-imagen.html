@@ -28,12 +28,14 @@
     <link rel="stylesheet" href="css/iconos.css">
     <link rel="stylesheet" href="assets/fontawesome/css/fontawesome-all.css">
 
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
   </head>
   <body class="hold-transition level-skin sidebar-mini">
     <div class="wrapper">
@@ -163,16 +165,18 @@
                 <div class="clearfix"></div>
 
                 <!-- Inicio tabla contenedora -->
-                <div id="table_dap" style="padding: 20px;">
+                <div id="table_dap">
                   <!-- Inicio tabla-responsive -->
                   <div class="table-responsive">
                     
                     <ul class="list-group mb-4">
-                      <li class="list-group-item active h5 m-0">Instrucciones - Parte 1 Información personal 5 minutos</li>
+                      <li class="list-group-item active h5 m-0">Instrucciones - Parte 3 - Descripción de una imagen 5 minutos</li>
                       <div class="bordeContent px-3 pt-3">
-                        <p>Este test simula una entrevista personal; en la cual usted puede grabar y escuchar su respuesta. Puede grabar las veces que usted lo desee y escuchar hasta que este conforme y envíe su grabación, no puede comparar las grabaciones sólo se grabará el audio actual, es importante que considere el tiempo asignado al test.</p>
+                        <p>A continuación se muestran un par de fotografías al hacer click  en el botón <span class="font-weight-bold text-uppercase">VER FOTOGRAFIAS.</span>  Por favor describir lo que se observa en las fotos, de que se tratan, y compáreles.  ¿Cuáles son la semejanzas y diferencias?  ¿Qué cree que está pasando en cada foto?  ¿Qué tienen en común estas fotos?  ¿Qué puede pasar en el futuro con respecto a estas situaciones?. </p>
 
-                        <p>Para comenzar debe hacer click en el botón <INICIAR class="font-weight-bold text-uppercase">INICIAR TEST.</span></p>
+                        <p>Puede grabar las veces que usted lo desee y escuchar hasta que este conforme y envíe su grabación, no puede comparar las grabaciones sólo se grabará el audio actual, es importante que considere el tiempo asignado al test.</p>
+
+                        <p>Para comenzar debe hacer click en el botón <span class="font-weight-bold text-uppercase">INICIAR TEST.</span></p>
                       </div>
                
       
@@ -185,77 +189,91 @@
 
                         <div class="instructions">
 
-                          <a class="btn btn-primary text-uppercase iniciarTest mr-3">
+                          <a class="btn btn-primary text-uppercase iniciarTest mr-0 mr-md-2 mt-4 mt-md-0">
                             <i class="far fa-clock pr-2"></i>Iniciar test&#32;<span id="countdown">20:00</span>
                           </a>
 
-                          <a class="btn btn-primary text-uppercase hideButton mb-3 mb-md-0" data-toggle="modal" data-target="#infoModal-testInfoPer-01">
+                          <a class="btn btn-primary text-uppercase hideButton mt-4 mt-md-0" data-toggle="modal" data-target="#infoModal-instrucComPicture-01">
                             <i class="fas fa-info-circle pr-2"></i>Ver instrucciones
                           </a>
 
                         </div>
+                  
+                        <a class="btn btn-primary text-uppercase hideButton mt-4 mt-md-0" data-toggle="modal" data-target="#infoModal-testComPicture-01">
+                            <i class="far fa-images pr-2"></i>Ver fotografias
+                        </a>
+                        
                       </li>
-                      <div class="bordeContentGradient px-3 pt-3" id="testInfoPer-01">
+                      <div class="bordeContentGradient px-3 pt-3" id="testCompPicture">
                         <!-- Inicio Panel -->
                         <div class="contenedor">
                           <div class="scrollbarSpeking" id="style-8">
 
                             <div class="force-overflow">
-
-                              <div class="contentSpeking borderLeft my-4">
-                                <p>Hola, soy (John).  Vamos a comenzar con una serie de preguntas.  Por favor intente contestar mis preguntas con frases completas, no solo con una palabra o dos.  </p>
-                              </div>
-
-                              <div class="contentSpeking borderRight">
-                                <p>¿Cuál es su nombre?</p>
-                              </div>
-
+                              <h4 class="titleTema">DESCRIBIR FOTOGRAFÍAS</h4>
+         
                               <div class="contentPlayerSpeking">
 
-                                   <button class="btn btn-secondary btn-lg text-uppercase mr-0 mr-md-4  px-3" id="btn-start-recording"><i class="fas fa-microphone-alt mr-2"></i>Iniciar grabación</button>
-                                  <!-- Inicio Audio -->
-                                  <div class="contentAudio">
-                                      <div class="audio-player">
-                                        <div class="timeline">
-                                          <div class="progress"></div>
+                                <div class="contianer-fluid">
+                                  <div class="row">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                      <div class="row">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                          <img src="img/torero.jpg" alt="Torero" alt="Torero" class="img-fluid rounded mb-4 mb-md-0">
                                         </div>
-                                        <div class="controls">
-                                          <div class="play-container">
-                                            <div class="circle">
-                                                <div class="toggle-play play">
-                                            </div>
-                                            </div>
-                                          
-                                          </div>
-                                          <div class="time">
-                                            <div class="current">0:00</div>
-                                            <div class="divider">/</div>
-                                            <div class="length"></div>
-                                          </div>
-                                        <!--   <div class="name">Music Song</div> -->
-                                          <div class="volume-container">
-                                            <div class="volume-button">
-                                              <div class="volume icono-volumeMedium"></div>
-                                            </div>
-                                            
-                                            <div class="volume-slider">
-                                              <div class="volume-percentage"></div>
-                                            </div>
-                                          </div>
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                                          <img src="img/montar-toro.jpg" alt="Montar toro" alt="Montar toro" class="img-fluid rounded">
                                         </div>
                                       </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex justify-content-center align-items-center d-column-flex">
+                                      
+                                      <button class="btn btn-secondary btn-lg text-uppercase mr-0 mr-md-4  mt-3 mt-md-0 px-3" id="btn-start-recording"><i class="fas fa-microphone-alt mr-2"></i>Iniciar grabación</button>
+                                      <!-- Inicio Audio -->
+                                      <div class="contentAudio">
+                                          <div class="audio-player">
+                                            <div class="timeline">
+                                              <div class="progress"></div>
+                                            </div>
+                                            <div class="controls">
+                                              <div class="play-container">
+                                                <div class="circle">
+                                                    <div class="toggle-play play">
+                                                </div>
+                                                </div>
+                                              
+                                              </div>
+                                              <div class="time">
+                                                <div class="current">0:00</div>
+                                                <div class="divider">/</div>
+                                                <div class="length"></div>
+                                              </div>
+                                            <!--   <div class="name">Music Song</div> -->
+                                              <div class="volume-container">
+                                                <div class="volume-button">
+                                                  <div class="volume icono-volumeMedium"></div>
+                                                </div>
+                                                
+                                                <div class="volume-slider">
+                                                  <div class="volume-percentage"></div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+
+                                  </div>
+                                </div>
+                             
+                     
                                   </div>
                                   <!-- Cierre de Audio -->
                               </div>
 
                               <div class="contentSendSpeking">
-
                                   <button class="btn btn-primary text-uppercase iniciarTest mr-0 mr-md-4" id="btn-start-recording"><i class="fas fa-paper-plane pr-2" aria-hidden="true"></i>Enviar grabación</button>
 
-                                  <button class="btn btn-primary text-uppercase iniciarTest" id="btn-start-recording"><i class="fas fa-step-forward" aria-hidden="true"></i>Saltar pregunta</button>
-
-
-
+                                  <button class="btn btn-primary text-uppercase iniciarTest" id="btn-start-recording"><i class="fas fa-step-forward pr-2" aria-hidden="true"></i>Saltar pregunta</button>
                               </div>
 
                             </div>
@@ -294,11 +312,11 @@
   
 
             <!-- Inicio Modal Instrucciones-->
-            <div class="modal fade" id="infoModal-testInfoPer-01" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="infoModal-instrucComPicture-01" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
               <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                   <div class="modal-header backgroundCeleste">
-                    <h5 class="modal-title text-white" id="exampleModalLongTitle">Instrucciones - Parte 1 Información personal 5 minutos</h5>
+                    <h5 class="modal-title text-white" id="exampleModalLongTitle">Instrucciones - Parte 3 - Descripción de una imagen 5 minutos</h5>
                     <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                     </button>
@@ -307,13 +325,44 @@
                     <button id="down" class="agrandar mr-3">-A</button><button id="up" class="agrandar">+A</button>
                   </div>
                   <div class="modal-body">
-                    <p class="agrandarTexto">Este test simula una entrevista personal; en la cual usted puede grabar y escuchar su respuesta. Puede grabar las veces que usted lo desee y escuchar hasta que este conforme y envíe su grabación, no puede comparar las grabaciones sólo se grabará el audio actual, es importante que considere el tiempo asignado al test.</p>
-                    <p class="agrandarTexto">Para comenzar debe hacer click en el botón <INICIAR class="font-weight-bold text-uppercase">INICIAR TEST.</span></p>
+                    <p class="agrandarTexto">A continuación se muestran un par de fotografías al hacer click  en el botón <span class="font-weight-bold text-uppercase">VER FOTOGRAFIAS.</span>  Por favor describir lo que se observa en las fotos, de que se tratan, y compáreles.  ¿Cuáles son la semejanzas y diferencias?  ¿Qué cree que está pasando en cada foto?  ¿Qué tienen en común estas fotos?  ¿Qué puede pasar en el futuro con respecto a estas situaciones?.</p>
+
+                    <p class="agrandarTexto">Puede grabar las veces que usted lo desee y escuchar hasta que este conforme y envíe su grabación, no puede comparar las grabaciones sólo se grabará el audio actual, es importante que considere el tiempo asignado al test.</p>
+
+                    <p class="agrandarTexto">Para comenzar debe hacer click en el botón <span class="font-weight-bold text-uppercase">INICIAR TEST.</span></p>
+
                   </div>
                 </div>
               </div>
             </div>
             <!-- Cierre Modal Instrucciones-->
+
+ <!-- Inicio Modal Instrucciones-->
+<div class="modal fade" id="infoModal-testComPicture-01" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header backgroundCeleste">
+        <h5 class="modal-title text-white" id="exampleModalLongTitle">Comparar fotografias</h5>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 ol-sm-6 col-md-6 col-lg-6">
+                <img src="img/torero.jpg" alt="Torero" alt="Torero" class="img-fluid rounded mb-4 mb-md-0">
+              </div>
+              <div class="col-12 ol-sm-6 col-md-6 col-lg-6">
+                <img src="img/montar-toro.jpg" alt="Montar toro" alt="Montar toro" class="img-fluid rounded">
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Cierre Modal Instrucciones-->
 
                      <!-- Inicio footer -->
             <footer class="main-footer">
@@ -335,7 +384,6 @@
 
 
 
-
             <script src="js/jquery-3.5.1.min.js"></script>
             <script src="js/popper.min.js"></script>
             <script src="js/bootstrap.min.js"></script>
@@ -347,7 +395,6 @@
             <script src="js/bootstrap-select.min.js"></script>
             <script src="js/app.js?ver=8"></script>
             <script src="js/player-script.js"></script>
-            
             
           </body>
         </html>
