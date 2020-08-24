@@ -1222,23 +1222,7 @@ nav li #login-content {
 
 /*--------------------*/
 
-#inputs input {
-  background: #f1f1f1;
-  padding: 6px 5px;
-  margin: 0 0 5px 0;
-  width: 238px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  box-shadow: 0 1px 1px #ccc inset;
-  background: rgba(255,255,255,.1);
-}
 
-#inputs input:focus {
-  background-color: #fff;
-  border-color: #e8c291;
-  outline: none;
-  box-shadow: 0 0 0 1px #e8c291 inset;
-}
 
 /*--------------------*/
 
@@ -1320,9 +1304,11 @@ nav li #login-content {
 #inputs input[data-type="password"]{
   margin-left: 50px;
 }
-#inputs .input {
+
+/* #inputs .input {
     padding-left: 15px;
-}
+} */
+
 #inputs .input:focus {
     background-color: transparent;
     color: #FFF;
@@ -1349,10 +1335,12 @@ nav li #login-content {
   border-width: 12px;
     right: 27px;
 }
-#inputs .input {
+
+/* #inputs .input {
     color: #FFFFFF;
-    padding-left: 30px;
-}
+    padding-left: 45px;
+} */
+
 .box-pol {
   width: 100%;
   max-width: 670px;
@@ -2392,3 +2380,48 @@ form .input-group {
   text-align: center;
   cursor: pointer;
 }
+
+
+#inputs input, #inputsRecuperar .input {
+  padding: 6px 5px 6px 35px;
+  margin: 0 0 5px 0;
+  width: 238px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px #ccc inset;
+  background: rgba(255,255,255,.1);
+  color:#ffffff;
+}
+
+#inputs input:focus, #inputsRecuperar .input:focus {
+
+  border-color: #e8c291;
+  outline: none;
+  box-shadow: 0 0 0 1px #e8c291 inset;
+  padding-left:35px!important;
+}
+
+#inputs input::-webkit-input-placeholder,  #inputsRecuperar .input::-webkit-input-placeholder{ /* Chrome/Opera/Safari */
+  color:#ffffff;
+  padding-left:0!important;
+
+
+}
+#inputs input::-moz-placeholder, #inputsRecuperar .input::-moz-placeholder { /* Firefox 19+ */
+  color:#ffffff;
+  padding-left:0!important;
+
+}
+#inputs input:-ms-input-placeholder,  #inputsRecuperar .input:-ms-input-placeholder{ /* IE 10+ */
+  color:#ffffff;
+  padding-left:0!important;
+
+}
+#inputs input:-moz-placeholder,  #inputsRecuperar input:-moz-placeholder{ /* Firefox 18- */
+  color:#ffffff;
+  padding-left:0!important;
+
+}
+
+
+
