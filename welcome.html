@@ -238,26 +238,124 @@
         </div>
       </footer>
 
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+
+       <!-- Inicio Modal Instrucciones-->
+       <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+            <div class="modal-header backgroundCeleste">
+              <h5 class="modal-title text-white" id="exampleModalLongTitle"><i class="fas fa-headphones-alt mr-2"></i> Testear audio y microfono</h5>
+              <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              ...
+
+            <div class="container my-4">
+              <p>Para poder realizar el examen correctamente por favor ejecuta la prueba de audio y micrófono de tu equipo.</p>
+              <p>Presiona <span class="font-weight-bold text-uppercase">Iniciar grabación</span> y lee el texto de mas abajo, para terminar hacer click en <span class="font-weight-bold text-uppercase">detener grabación</span></p>
+
+              <div class="contentTetx my-3">
+                <p class="m-0 text-center">Hola soy Darío Morán estoy testeando audio y micrófono, hoy es lunes 24 de Agosto 2020 y son las 20:36</p>
+              </div>
+
             </div>
-            <div class="modal-footer">
-         <!--      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button> -->
+
+
+              <div class="container my-4">
+                <div class="row">
+                  <div class="col-12 text-center">
+                    <button class="btn btn-primary text-uppercase mr-0 mr-md-2" id="btnInicarGragbacion"><i class="fas fa-microphone-alt pr-2" aria-hidden="true"></i>Iniciar grabación</button>
+
+                    <button class="btn btn-primary text-uppercase" id="btnStopGrabacion"><i class="far fa-stop-circle pr-2" aria-hidden="true"></i>Detener grabación</button>
+
+                  </div>
+                </div>
+              </div>
+          
+              <div class="container my-4">
+                <div class="row">
+                  <div class="col-12 d-flex justify-content-center align-items-center">
+                     <!-- Inicio Audio -->
+                 
+                      <div class="audio-player">
+                        <div class="timeline">
+                          <div class="progress"></div>
+                        </div>
+                        <div class="controls">
+                          <div class="play-container">
+                            <div class="circle">
+                                <div class="toggle-play play">
+                            </div>
+                            </div>
+                          
+                          </div>
+                          <div class="time">
+                            <div class="current">0:00</div>
+                            <div class="divider">/</div>
+                            <div class="length"></div>
+                          </div>
+                        <!--   <div class="name">Music Song</div> -->
+                          <div class="volume-container">
+                            <div class="volume-button">
+                              <div class="volume icono-volumeMedium"></div>
+                            </div>
+                            
+                            <div class="volume-slider">
+                              <div class="volume-percentage"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  <!-- Cierre de Audio -->
+
+                  </div>
+                </div>
+              </div>
+           
+              <div class="container mb-4">
+                <div class="row">
+                  <div class="col-12 text-center mt-3">
+                    <div class="contentPregunta">
+
+
+                      <div class="pregunta">
+                            <h5 class="m-0 text-white"><i class="far fa-question-circle mr-2"></i>¿Cómo te fue?</h5>
+                        </div>
+                    
+                        <button class="btn btn-success text-uppercase mr-0 mr-md-2" id="btnInicarGragbacion"><i class="far fa-thumbs-up pr-2" aria-hidden="true"></i>Grabé y escuche bien</button>
+                 
+                        <button class="btn btn-danger text-uppercase" id="btnStopGrabacion"><i class="far fa-times-circle pr-2" aria-hidden="true"></i>No puede grabar ni escuchar</button>
+                      
+                    </div>
+   
+  
+                 
+                    <!-- <hr>
+                    <h6>¿Cómo te fue?</h6>
+                    <form>
+
+                      <button class="btn btn-primary text-uppercase" id="btnStopGrabacion"><i class="far fa-stop-circle pr-2" aria-hidden="true"></i>Grabé y escuche bien</button>
+
+                      <button class="btn btn-primary text-uppercase" id="btnStopGrabacion"><i class="far fa-stop-circle pr-2" aria-hidden="true"></i>No puede grabar ni escuchar</button>
+
+          
+                    </form> -->
+
+       
+
+                  </div>
+                </div>
+              </div>
+
+
+
             </div>
           </div>
         </div>
       </div>
+      <!-- Cierre Modal Instrucciones-->
+
 
       <script src="js/jquery-3.5.1.min.js"></script>
       <script src="js/popper.min.js"></script>

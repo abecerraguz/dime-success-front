@@ -5344,6 +5344,29 @@ height: 55px;
   justify-content: center;
 }
 
+.pregunta{
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 1rem;
+  background: #0bacef;
+  text-align: left;
+  margin: 0 0 1rem 0;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+
+.contentPregunta{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border: 1px solid #bebebe;
+  background: #ededed;
+  border-radius: 10px;
+  padding-bottom: 1rem;
+  box-shadow:-1px 1px 6px rgb(0 0 0 / 33%);
+}
+
+
 
 
 
